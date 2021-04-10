@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- THE HEAD TAG PARTIAL -->
+  <%- include("partials/head") %>
+
+  <body>
+    <!-- THE HEADER TAG PARTIAL -->
+    <%- include("partials/header") %>
+    <main>
+      <!-- *********DISPLAY OUR PICTURES********* -->
+      <h1 class="title">My Pictures</h1>
+      <a href="/auth/logout"><button class="button">Logout</button></a>
+      <% for (picture of pictures) { %>
+        <img src="<%= picture.text %>">
+      <% } %>
+        <br/> <br/>
+      <!-- **********NEW PICTURES FORM**************** -->
+      <form action="/picture" method="post">
+        <input type="text" placeholder="new picture" name="text" />
+        <input type="submit" class="button" value="Add Picture Url" />
+      </form>
+    </main>
+    <!-- THE HEAD TAG PARTIAL -->
+    <%- include("partials/footer") %>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+main {
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.header {
+    padding:60px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size:30px;
+}
+
+img {
+    max-height: 500px;
+    max-width: 500px;
+    border-radius: 30px;
+}

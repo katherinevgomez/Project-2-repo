@@ -18,6 +18,9 @@ const HomeRouter = require("./routes/home.js");
 const session = require("express-session"); // create session cookies
 const connect = require("connect-mongodb-session")(session) // store cookies in mongo
 
+//import my router
+const PictureRouter = require("./routes/picture.js")
+
 /////////////////////////////////////
 // Create Express Application Object
 /////////////////////////////////////
@@ -58,6 +61,12 @@ app.use(
 /////////////////////////////////////
 // Routes and Routers
 /////////////////////////////////////
+
+// //test route
+// app.get("/", (req,res) => {
+//   res.send("<h1>Hello World<h1>")
+// })
+// app.use("/picture", PictureRouter)
 
 //HomeRouter
 app.use("/", HomeRouter);
