@@ -1,21 +1,15 @@
-# Project Name
+# Image Lover App
 
-- **Author:** dfadfadfadfsfa
-- **Link to Live Site:** fdfadadfadfsdfadfadf
+- **Author:** Katherine Gomez
 
 
 ## Project Summary
-
+An app to store your favorite pics
 
 
 ## Technology Used
+express, mongodb, mongoose, ejs
 
-
-## Models
-
-Sample Model:
- - name => String
- - age => number
 
 
 ## Route Map
